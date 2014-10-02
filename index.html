@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+  <title>CASH MONEY SLOTH</title>
+  <style>
+  
+  
+    
+    .polaroid img {
+      position: center;
+      border: 20px solid #fff;
+      border-bottom: 100px solid #fff;
+      -webkit-box-shadow: 6px 6px 6px #777;
+          -moz-box-shadow:6px 6px 6px #777;
+                  box-shadow: 6px 6px 6px #777;
+    }
+  
+    body {
+      
+      text-align: center;
+      background: url("http://i.imgur.com/na2lWHg.jpg");
+      background-size: center;
+      background-position: center;
+      color: orange;
+      font-family: impact;
+      
+      
+    }
+  
+    p {
+      font-size: 100px;
+      font-family impact;
+    }
+    
+    
+    
+    input {
+      border: 10;
+      padding: 10px;
+      font-size: 20px;
+      color: black;
+    }
+    
+    input[type="submit"] {
+      background: #3574E3;
+      color: white;
+      border: 5;
+      padding: 10px;
+    }
+      
+    #nav {
+      position:fixed;
+      top:0;
+      width: 100%;
+      opacity: 0.95;
+    }
+    
+    #nav ul {
+      margin-top:-80px;  
+      font-size:2em;
+      margin-left:-20px;
+
+    }
+    
+    #nav ul:hover {
+      cursor: pointer;
+    }
+    
+    .hidden {
+      display:none;
+      }
+
+    .content {
+      margin-top: 400px;
+      }
+
+a {
+        text-decoration:none;
+  }
+
+</style>
+
+</head>
+
+<body> 
+<div id="nav">
+
+
+ <div class="polaroid">
+ 
+ <img src="http://thethirdbestblogever.files.wordpress.com/2012/03/wpid-1330954080805.gif?w=497">
+  </div>
+  <ul>
+    <li data-section='page1'>home yo</li>
+    <li data-section='page2'>holla at a sloth</li>
+  </ul>
+
+  </div>
+  
+  
+<div class="content page1">
+  <p><b>The purpose of this site is to introduce you to Cash Money Sloth.
+He is a baller. He Sleeps All Day And Parties All Night
+</b></p>
+  <p><b>Click Here To Save The Sloths</b></p>
+  <input type="email" placeholder="Enter Social Security #">
+  <input type="submit" value="$ubmit" />
+<p> But Let's Talk More About Me</p>
+<p> I'm slothy, at least the height of a gorilla, and svelt as a giraffe. 
+<p> Not intimidating in the least, bro.</p>
+<p>I rock a lotta bling, sometimes a top hat, and other times my shades #dealwith it</p>
+<p>I breath Cash and my life roadmap </p>
+
+</div>
+
+<div class="content page2 hidden" >
+
+  <h1 style="font-size=3em;">Communication yo</h1>
+  <p>
+  Interspecial Communicationz:
+  </p>
+<iframe width="960" height="720" src="//www.youtube.com/embed/VMJqIyW849s" frameborder="0" allowfullscreen></iframe>
+
+  
+  <p>
+    Sloth on Sloth on Sloth on Sloth
+  </p>
+  <iframe width="1280" height="720" src="//www.youtube.com/embed/NkpT9VH-Ums" frameborder="0" allowfullscreen></iframe>
+</div>
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(function(){
+  $('#nav li').click(function(e){
+    var $item = $(e.target);
+    $('.content').hide();
+    $('.' + $item.data('section')).show();    
+  });
+});
+</script>
+</html>
